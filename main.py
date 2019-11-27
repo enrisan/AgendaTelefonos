@@ -1,6 +1,7 @@
-#Ejercicio de manejo de elementos en funcion dict()
+# Ejercicio de manejo de elementos en funcion dict()
 
 agenda_telefonica = dict()
+
 
 def imprimir_operacion(nombre_operacion):
     print()
@@ -51,7 +52,7 @@ def ver_todo():
         nombre_operacion("No hay ningún contacto.")
     else:
         for contacto in agenda_telefonica:
-            if nombre_operacion == None:
+            if nombre_operacion is None:
                 nombre_operacion = "{} - {}".format(contacto, agenda_telefonica[contacto])
             else:
                 nombre_operacion += "\n{} - {}".format(contacto, agenda_telefonica[contacto])
